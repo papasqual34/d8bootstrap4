@@ -1,0 +1,93 @@
+// Variables de couleur
+$blue_memo: #3333FF;
+$blue_dark_memo: rgb(5, 5, 77);
+
+
+
+// Liens
+a {
+    color: $blue_memo;
+    // nesting
+    &:hover{
+        color: $blue_dark_memo;
+    }
+    // @media screen and (max-width: 768px){
+    //     color: red;
+    // }
+    @include media-breakpoint-down(sm){
+        color: red;
+    }
+}
+// a:hover{
+//     color: $blue_dark_memo;
+// }
+
+header{
+    .main-title{
+        display: flex;
+        justify-content: center;
+        background-color: grey;
+    }
+}
+
+h1{
+    display: flex;
+    // Affichage en mode table ancienne méthode
+    // display: table;
+    // margin: 0 auto;
+   // align-items: center;
+    color: white;
+}
+
+h2{
+    display: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button{
+    margin-right: 10px;
+}
+
+.btn-secondary{
+    &:hover{
+        background-color: $warning;
+    }
+}
+main{
+    .row{
+        @include media-breakpoint-down(sm){
+            overflow-x: auto;
+        }
+        
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    section{
+        flex-direction: column;
+        flex-basis: 0;
+        flex-grow: 1;
+        @include media-breakpoint-down(sm){
+            min-width: 100%;
+        }
+
+        .card{
+            background-color: gray;
+            color: white;
+            text-align: center;
+            margin: 1rem;
+            .card-btn{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+     }
+    
+}
