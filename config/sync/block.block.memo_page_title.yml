@@ -1,0 +1,20 @@
+uuid: 12cfe0b1-3efd-44d7-b25d-c138d7ed35b3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - memo
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: memo_page_title
+theme: memo
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
