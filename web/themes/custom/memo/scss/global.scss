@@ -1,4 +1,44 @@
-body{
-    background-color:  blue !important;
+// Logo
+nav.navbar {
+    background-color: transparent;
+    display: block;
+    padding: 0.5 rem 0;
+    h1{
+        text-align: center;
+        background-color: $secondary;
+    }
 }
 
+.navbar-collapse{
+    justify-content: center;
+}
+
+// Colonnes
+.card-column {
+  article {
+    background-color: $secondary;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    div.field-content {
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+    .views-field-title {
+        a {
+            color: white;
+            font-size: 1.5 rem;
+        }
+    }
+    .views-field-field-answer {
+        display: none;
+        }
+    // Au survol de l'article la réponse apparait
+    &:hover{
+    .views-field-field-answer {
+        display: block;
+      }
+    }
+  }
+}
